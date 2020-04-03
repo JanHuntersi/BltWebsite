@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+}
+ 
+.cointainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 3.5vw;
+    background-color:#ebebeb;
+    font-family: 'Open Sans', sans-serif;
+    color: #7d7d7d;
+    font-size: 1.5vw;
+ 
+}
+
+
+
+
+@media (max-width: 991px){
+.cointainer{
+    display: none;
+}
+
+
+}
