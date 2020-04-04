@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 }
 .cointainer {
     display: flex;
@@ -28,17 +27,13 @@ nav{
     align-items: center;
     justify-content:space-around;
     min-height: 11vh;
-    background-color: azure;
-    font-family: 'Poppins', sans-serif;
-        
+    background-color: white;
+    font-family: 'Poppins', sans-serif;     
 }
- 
-.logo{}
 .nav-links{
     display: flex;
     justify-content: space-between;
     width: 70vw;
-
 }
 .nav-links a{
     text-decoration: none;
@@ -98,12 +93,10 @@ nav{
         display: block;
         cursor: pointer;
     }
- 
 }
 .nav-active{
     transform: translateX(0%);
 }
-
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -123,3 +116,51 @@ transform: rotate(-45deg) translate(-15px,12px);
 .toggle .line3{
     transform: rotate(45deg) translate(-2px,-0.5px);
 }
+
+.slider-image{
+   display: block;
+width: 100%;
+height: 73vh;
+background-color: aqua;
+background-image: url("slike/celovite_resitve.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ #slider-image-naslov{
+    padding-top: 21%;
+    padding-left: 10% ;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 8vh;
+    color: white;
+}
+
+#pred-podnaslov{
+    padding-left: 13%;
+    padding-top: 1%;
+}
+
+#slider-image-podnaslov{
+     
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    font-family: Poppins Light;
+    font-weight: 100;
+    font-size: 4.5vh;
+    width: auto;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+     display: table-cell;
+     cursor: pointer;
+}
+
+#slider-image-podnaslov:hover{
+transition: ease-in .3s;
+    border-color:#1a3b66;
+     opacity: 0.8;
+    color: white;
+    border-width: 2px;
+}
+
