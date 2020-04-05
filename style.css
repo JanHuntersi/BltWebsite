@@ -5,6 +5,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 }
 .cointainer {
+    position: relative;
+    top: 11vh;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -22,7 +24,13 @@
     display: none;
 }
 }
+/*  STICKY NAVBAR         */
+
 nav{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -67,9 +75,12 @@ nav{
 }
 
 @media screen and (max-width: 850px){
-    body{
+    body {
         overflow-x: hidden;
+        
+ /*Tu sem dal da nena overflow zafuka */ 
     }
+    
     .nav-links{
         position: absolute;
         right: 0px;
@@ -118,9 +129,9 @@ transform: rotate(-45deg) translate(-15px,12px);
 }
 
 .slider-image{
-   display: block;
+  
 width: 100%;
-height: 73vh;
+height: auto;
 background-color: aqua;
 background-image: url("slike/celovite_resitve.jpg");
 background-repeat: no-repeat;
@@ -138,7 +149,8 @@ background-size: cover;
 
 #pred-podnaslov{
     padding-left: 13%;
-    padding-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 14%;
 }
 
 #slider-image-podnaslov{
@@ -161,6 +173,44 @@ transition: ease-in .3s;
     border-color:#1a3b66;
      opacity: 0.8;
     color: white;
-    border-width: 2px;
+    border-width: 1px;
 }
 
+
+/*prava izbira     */
+.prava-izbira{
+    box-sizing:border-box;
+}
+.left-column{
+   /* background-color: #1a3b66;*/
+   display: flex;
+   float:left;
+    height: 100vh;
+   
+    align-items: center;
+    justify-content: center;
+    width:50%; /* The width is 20%, by default */
+    text-align: center;
+    
+}
+.right-column{
+    display: flex;
+    height: 100vh;
+    float:right;
+    align-items: center;
+    justify-content: center;
+    width:50%; /* The width is 20%, by default */
+}
+.inside-left-column{
+ width: 70vh;
+}
+.right-column-container{
+
+ 
+}
+
+@media screen and (max-width:900px) {
+    .left-column, .right-column {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
