@@ -140,7 +140,7 @@ transform: rotate(-45deg) translate(-15px,12px);
   
 width: 100%;
 height: auto;
-min-height: 70vh;
+
 background-color: aqua;
 background-image: url("slike/celovite_resitve.jpg");
 background-repeat: no-repeat;
@@ -219,6 +219,7 @@ transition: ease-in .3s;
 @media screen and (max-width:900px) {
     .left-column, .right-column {
       width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-      height: 44.5vh;
+      height: 39.5vh;
+      margin-top: 5vh;
     }
   }
