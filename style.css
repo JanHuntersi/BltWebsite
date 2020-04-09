@@ -403,6 +403,8 @@ footer .footer-bottom{
 }
 /* -------------------------------Konec Footer------------------------------ */
 
+
+/*------------------------Media queries--------------------------------------*/
 @media screen and (min-width:901px) {.card:hover{ /* velikost računalnika*/
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
