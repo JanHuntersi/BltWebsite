@@ -294,6 +294,64 @@ transition: ease-in .3s;
 
 transition: all 0.4s ease 0s;
 }
+/*     -------------KONEC CARD----------   */
+
+/*     -------------STRANKE------------      */
+.stranke-container{
+    width: 100%;height: 90vh;
+    display:  flex;
+    flex-direction: column; justify-content: space-around;
+    align-items: center;
+}
+.stranke-naslov{flex: 1.4;width: 100%; display: flex;align-items: center;justify-content:center;
+    font-size: 5vh;
+    font-family: "Open Sans";
+    color: rgb(33, 32, 32);
+    font-weight: bold;
+  
+    }  
+.stranke-grid{flex: 1.5;width: 100%;  
+    display: flex; flex-direction: row; justify-content: center; align-items: center;
+    flex-flow: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(255, 255, 255);
+      /* background-color: rgb(91, 43, 145); */}
+.stranke-gumb{flex: 1.4;width: 100%;   ;display: flex;align-items: center;justify-content:center;}
+.stranke-gumb button{
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 0.1px solid #3d3d3f;
+    color: #3d3d3f;
+    width: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+      font-size: 2vh;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s ease-in-out;
+}
+.stranke-grid-stranka{
+    display: flex;
+    height: 70%;
+    width: 25%;
+    justify-content: center; align-items: center;
+}
+/*
+.stranke-grid-stranka:nth-child(odd)
+{background-color: aquamarine;}
+.stranke-grid-stranka:nth-child(even)
+{background-color: rgb(10, 75, 53);}
+*/
+.stranke-grid-stranka:nth-child(1){border-right: 1px solid black;}
+ .stranke-grid-stranka:nth-child(2){border-right: 1px solid black;}
+.stranke-grid-stranka:nth-child(3){border-right: 1px solid black;}
+/*  ---- konec strank  ----- */
+
 @media screen and (min-width:901px) {.card:hover{ /* velikost računalnika*/
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
@@ -332,7 +390,18 @@ transition: all 0.4s ease 0s;
     .card-vsebina{font-size:2vh;}
     .card:nth-child(3){margin-bottom: 10vh;}
     #podnaslov-cards{ margin-top: 5vh;margin-bottom: 2.5vh; }
-    
-  
     .drzim-stran-skupaj{height: 100vh;}
-  }
+
+    /*  Stranke   */
+    .stranke-naslov{text-align: center; font-size: 4vh; flex: 2;}
+    .stranke-grid{ flex:4;}
+    .stranke-grid-stranka{
+        display: flex;
+        height: 40%;
+        width: 50%;
+    }
+    .stranke-grid-stranka:nth-child(1){border-right: 1px solid black;}
+    .stranke-grid-stranka:nth-child(3){border-right: 1px solid black;}
+    .stranke-grid-stranka:nth-child(2){border-right: none;}
+    /* Konec stranke*/
+}
