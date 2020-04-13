@@ -6,8 +6,8 @@
 }
 
 .cointainer {
-    position: relative;
-    top: 11vh;
+
+    position: static;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -20,19 +20,33 @@
     color: #7d7d7d;
     font-size: 1.7vh;
 }
+
 @media (max-width: 900px){
 .cointainer{
     display: none;
 }
-}
-/*  STICKY NAVBAR         */
 
+
+}
+
+/*  STICKY NAVBAR         */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .vsebina-strani {
+   padding-top: 11vh;
+  }
 nav{
     z-index: 50000;
     -webkit-box-shadow:0px 0.5px 0.5px #d6d6d6;
  -moz-box-shadow:0px 0.5px 0.5px #d6d6d6;
  box-shadow:0px 0.5px 0.5px #d6d6d6;
-    position: fixed;
+    
     top: 0;
     width: 100%;
     display: flex;
@@ -142,7 +156,7 @@ transform: rotate(-45deg) translate(-15px,12px);
   
 width: 100%;
 height: auto;
-
+position: static;
 background-color: aqua;
 background-image: url("slike/celovite_resitve.jpg");
 background-repeat: no-repeat;
@@ -412,6 +426,27 @@ footer .footer-bottom{
     margin-bottom: 15vh;
 }
 .card:nth-child(2){margin-top: 10vh;}
+/*Gumb za navzgor */
+#gumb-za-navzgor{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 100;
+    background-color: #f28511;
+    border-radius: 9px;
+    padding: 12px 12px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    color: #fff;
+    font-weight: 500;
+}
+#gumb-za-navzgor:hover{
+    background-color: #eba458;
+}
 }
 @media screen and (max-width:900px) {
     .left-column, .right-column {
@@ -458,3 +493,100 @@ footer .footer-bottom{
     .stranke-grid-stranka:nth-child(2){border-right: none;}
     /* Konec stranke*/
 }
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* Css - Kontakt   */
+  #slider-image-container-naslov{
+      display: flex;
+      align-items: flex-start;
+      flex: 1.5;
+      width: 100%;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 4vw;
+      color: white;
+      text-transform:uppercase;
+    }
+    #slider-image-container-vsebina{
+     
+        display: flex;
+        flex-direction: row;
+        flex:4.5;
+        width: 100%;
+        font-family: Poppins;
+      font-weight: 300;
+      font-size: 2.2vw;
+      color: white;
+    }
+    #slider-image-button{
+        border-radius: 15px;display: flex; align-items: center; justify-content:center; width: 60%; height: 25%; background-color:#f28511;text-align: center;
+              font-family: Poppins; font-size: 1.5vw;
+      font-weight: 500;
+      transition: 0.3s ease-in;
+    }
+    #slider-image-button:hover{
+        background-color: #eba458;
+    }
+    #slider-image-right-column{
+        display:flex;justify-content: flex-end; align-items: flex-end; width: 35%; height:100%; 
+    }
+    #slider-image-left-column{
+        width: 65%; height:100%;display:flex;justify-content: flex-end; align-items: flex-end; 
+    }
+    @media screen and (max-width:900px) {
+        #slider-image-container-vsebina{
+            flex-direction: column;
+        }
+        #slider-image-right-column, #slider-image-left-column {
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        #slider-image-container-vsebina{
+            font-size: 3vw;
+        }
+        #slider-image-button{font-size: 2vw;}
+        #slider-image-container-naslov{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    /* ----Konec image slider-*/ 
+
+    /* --------------------Zemljeviddd-----------*/
+    .container-zemljevid{
+        display: flex;
+        height: 140vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .inside-column-zemljevid{
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+    #pokliciteNas{
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 1.8vw;
+}
+#podPokliciteNas{
+    font-family: Open Sans regular;
+    font-size: 1.2vw;
+    
+}
+    .center-items{
+        display: flex; flex-direction: row; justify-content: center; align-items: center;
+    }
+    .column-zemljevid{
+        display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;
+    }
