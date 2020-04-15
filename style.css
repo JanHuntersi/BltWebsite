@@ -4,7 +4,9 @@
     box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 }
-
+body{
+    overflow-x: hidden;
+}
 .cointainer {
 
     position: static;
@@ -540,6 +542,11 @@ html {
         width: 65%; height:100%;display:flex;justify-content: flex-end; align-items: flex-end; 
     }
     @media screen and (max-width:900px) {
+        body {
+            overflow-x: hidden;
+            
+     /*Tu sem dal da nena overflow zafuka */ 
+        }
         #slider-image-container-vsebina{
             flex-direction: column;
         }
@@ -552,7 +559,7 @@ html {
         #slider-image-container-vsebina{
             font-size: 3vw;
         }
-        #slider-image-button{font-size: 2vw;}
+        #slider-image-button{font-size: 2vw; }
         #slider-image-container-naslov{
             text-align: center;
             align-items: center;
@@ -691,3 +698,76 @@ html {
       .fa-phone-alt:before {
         margin-left: 15px;
     }
+
+
+    /*   ---O nas HTML */ 
+    #kontakt-header-naslov{
+        align-items: center; font-family: Poppins;
+      font-weight: 500;font-size: 10vh; color: white; justify-content: center; padding-bottom: 10vh;
+    }
+    #kontakt-header-button{
+        border-radius: 15px;display: flex; align-items: center; justify-content:center;background-color:#f28511;text-align: center;
+              font-family: Poppins; font-size: 1.5vw;
+      font-weight: 500;
+      transition: 0.3s ease-in;
+      width: 25vw; height: 10vh; color: white;
+    }
+    #kontakt-header-button:hover{
+        background-color: #eba458;
+    }
+    @media screen and (max-width:900px) {
+        #kontakt-header-naslov{
+font-size: 5vh;
+        }
+        #kontakt-header-button{
+            height: 5vh;
+            font-size: 3vw;
+            width: 45vw;
+        }
+    }
+
+
+    /*   Kdo smo   */
+.kontakt-kdo-smo{
+    height: 90vh; width: 100%; 
+    display: flex; align-items: center; justify-content: center;
+}
+.kdo-smo-container{
+    width: 85%;
+    height: 80%;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.kdo-smo-container-left{
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+    height: 100%;
+    width: 48%;
+}
+.kdo-smo-container-right{
+    height: 100%;
+    width: 48%;
+    display: flex; align-items: center; justify-content: center;
+}
+@media screen and (max-width:900px) {
+    .kontakt-kdo-smo{
+        height: 130vh;
+    }
+    .kdo-smo-container{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .kdo-smo-container-left{
+        align-items: center;
+        width: 90%;
+        height: 70%;
+        font-size: 2vw;
+    } .kdo-smo-container-right{
+        width: 90%;
+        height: 30%;
+    }
+    #kdo-smo-naslov{
+        font-size: 1vh;
+    }
+}
