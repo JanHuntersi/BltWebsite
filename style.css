@@ -156,7 +156,6 @@ transform: rotate(-45deg) translate(-15px,12px);
 }
 
 .slider-image{
-  
 width: 100%;
 height: auto;
 position: static;
@@ -174,16 +173,15 @@ background-size: cover;
     font-weight: 500;
     font-size: 8vh;
     color: white;
+    animation: 2.8s ease-in  animacijaOdLeve;
 }
-
 #pred-podnaslov{
     padding-left: 13%;
     padding-top: 2%;
     padding-bottom: 14%;
+    animation: 3.7s alternate  animacijaOdDesne;
 }
-
 #slider-image-podnaslov{
-     
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
     font-family: Poppins Light;
     font-weight: 100;
@@ -392,9 +390,8 @@ footer .footer-top{
     width: 100%;
 }
 footer .footer-top img{
-    
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 80%;
+    max-height: 80%;
     display: block; /* remove extra space below image */
 }
 footer .footer-crta{
@@ -417,6 +414,15 @@ footer .footer-bottom{
     display: flex;  align-items:center; justify-content: center;
     text-align: center;
     font-family: 'Open Sans Light', sans-serif; color: #fff; font-size: 2vw;
+}
+@media screen and (max-width:900px){footer .footer-top img{
+    max-width: 55%;
+    max-height: 55%;
+    display: block; /* remove extra space below image */
+}
+footer .footer-bottom {font-size: 3.5vw;}
+footer .footer-middle {font-size: 3.5vw;}
+
 }
 /* -------------------------------Konec Footer------------------------------ */
 
@@ -476,8 +482,7 @@ footer .footer-bottom{
     .stranke-grid-stranka:nth-child(3){border-right: 1px solid black;}
     .stranke-grid-stranka:nth-child(2){border-right: none;}
   
-    footer .footer-bottom {font-size: 3.5vw;
-    }
+    
     /* Konec stranke*/
 }
 
@@ -806,6 +811,7 @@ font-size: 5vh;
     font-size: 2vw;
     
 }
+@media screen and (min-width:901px){.prodajni-program-container-grids{margin-left:5%;}}
 @keyframes  animacijaOdLeve{
     0%{transform: translateX(-100%);
     }
