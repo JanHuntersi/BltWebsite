@@ -11,40 +11,45 @@
 </head>
 <body>
    
-      <!---Zgornji del zaslona naslov na levi in stevilka na desni      --> 
-      <section class="cointainer"> 
-        <div id="left-top-wrapper">
-         <p><i class="fas fa-map-marker-alt" 
-           style="font-size: 2.5vh;">
-           <!--  Tukaj gre ikona geo-lokacije-->
-       </i>  Ulica Sv. Barbare 6, 5280 Idrija</p>
-        </div>
-        <div id="right-top-wrapper">
-           <p><i class="fas fa-phone-alt"></i
-               style="font-size: 2.5vh;">
-    <!--  Tukaj gre ikona telefona-->
-           </i> +386 5 37 43 </p>
-       </section>
-
      <!---Navbar - sticky     -->
-   <nav id="myHeader">
-    <a class="logo" href="#" title="">
-        <img alt="" src="slike/blt_logo.svg">
-    </a> 
-       <ul class="nav-links">
-        <li><a href="index.html">DOMOV</a> </li>
-        <li><a href="prodajni-program.html">PRODAJNI PROGRAM</a> </li>
-        <li><a href="storitve.html">STORITVE</a> </li>
-        <li><a href="o-nas.html">O NAS</a> </li>
-        <li><a href="kontakt.html">KONTAKT</a> </li>      
-       </ul>
-       <div class="burger ">
-           <div class="line1"></div>
-           <div class="line2"></div>
-           <div class="line3"></div>
-       </div>
-   </nav>
-<div class="vsebina-strani"></div>
+     <nav id="myHeader" class="sticky">
+        <a class="logo" href="#" title="">
+            <img alt="" src="slike/blt_logo.svg">
+        </a> 
+           <ul class="nav-links">
+            <li><a href="index.html">DOMOV</a> </li>
+            <li><a href="prodajni-program.html">PRODAJNI PROGRAM</a> </li>
+            <li><a href="storitve.html">STORITVE</a> </li>
+            <li><a href="o-nas.html">O NAS</a> </li>
+            <li><a href="kontakt.html">KONTAKT</a> </li>
+               
+           </ul>
+           <div class="burger ">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+           </div>
+       </nav>
+    <div class="vsebina-strani">
+     <!--Konec Navbar-->
+    
+    
+          <!---Zgornji del zaslona naslov na levi in stevilka na desni      --> 
+          <section class="cointainer"> 
+            <div id="left-top-wrapper">
+             <p><i class="fas fa-map-marker-alt" 
+               style="font-size: 2.5vh;">
+               <!--  Tukaj gre ikona geo-lokacije-->
+           </i>  Ulica Sv. Barbare 6, 5280 Idrija</p>
+            </div>
+            <div id="right-top-wrapper">
+               <p><i class="fas fa-phone-alt"></i
+                   style="font-size: 2.5vh;">
+        <!--  Tukaj gre ikona telefona-->
+               </i> +386 5 37 43 </p>
+           </section>
+           <!--Konec del zaslona na levi številka-->
+
 
 
 <!-- Slider images-->
@@ -52,19 +57,18 @@
 display: flex; flex-direction:column; justify-content: center; align-items: center; ">
     <div style="position: static; width: 100%; height:100%; 
     display: flex; flex-direction:column; justify-content: center; align-items:center;">
-      <p id="kontakt-header-naslov">PRODAJNI PROGRAM</p>
+      <p  style="text-align: center;" id="kontakt-header-naslov">PRODAJNI PROGRAM</p>
     </div>
 </div>
 
 <!-- Naslov-->
 <div class="prodajni-program-naslov">
-<p>Vrhunska kakovost, dolga življenska doba, energetska učinkovitost, sodoben dizajn in nizki vzdrževalni stroški. To so osnovne prednosti programov vrat za industrijo. Podjetju BLT d.o.o. Idrija že preko 20 let zaupajo največje in najuspešnejše slovenske gospodarske družbe ter medicinske ustanove.</p>
 </div>
 
 <!-- Prodajni Program-->
 <div class="prodajni-program-container ">
 <div class="prodajni-program-container-grids">
-    <div class="box" ><img src="slike/vrata/sekcijska_dvizna.jpg" style="height: 90%; max-width: 100%;"><p >Garažna Vrata</p></div>
+    <div class="box" ><img src="slike/vrata/sekcijska_dvizna.jpg" style="height: 90%; width: 100%;"><p >Garažna Vrata</p></div>
     <div class="box "><img src="slike/vrata/industrijska-vrata.jpg" style="height: 90%; width: 100%;"><p>Industrijska Vrata</p></div>
     <div class="box "><img src="slike/vrata/zrakotesna-vrata.jpg" style="height: 90%; width: 100%;"><p>Zrakotesna Vrata</p></div>
     <div class="box "><img src="slike/vrata/požarni-sistemi.jpg" style="height: 90%; width: 100%;"><p>Požarni Vrata</p></div>

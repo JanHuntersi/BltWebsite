@@ -8,8 +8,8 @@ body{
     overflow-x: hidden;
 }
 .cointainer {
-
-    position: static;
+   position: relative;
+   top: 11vh;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -39,10 +39,11 @@ body{
     width: 100%
   }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) 
   .sticky + .vsebina-strani {
    padding-top: 11vh;
   }
+  */
 nav{
     z-index: 50000;
     -webkit-box-shadow:0px 0.5px 0.5px #d6d6d6;
@@ -415,7 +416,7 @@ footer .footer-bottom{
     background-color: #1c1f21;
     display: flex;  align-items:center; justify-content: center;
     text-align: center;
-    font-family: 'Open Sans Light', sans-serif; color: #fff; font-size: 3vh;
+    font-family: 'Open Sans Light', sans-serif; color: #fff; font-size: 2vw;
 }
 /* -------------------------------Konec Footer------------------------------ */
 
@@ -429,26 +430,7 @@ footer .footer-bottom{
 }
 .card:nth-child(2){margin-top: 10vh;}
 /*Gumb za navzgor */
-#gumb-za-navzgor{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 50px;
-    z-index: 100;
-    background-color: #f28511;
-    border-radius: 9px;
-    padding: 12px 12px;
-    text-align: center;
-    width: 100px;
-    height: 50px;
-    text-transform: uppercase;
-    font-family: "Poppins";
-    color: #fff;
-    font-weight: 500;
-}
-#gumb-za-navzgor:hover{
-    background-color: #eba458;
-}
+
 }
 @media screen and (max-width:900px) {
     .left-column, .right-column {
@@ -474,7 +456,7 @@ footer .footer-bottom{
     .card{
         margin-top: 8vh;
         height: 50vh;
-        width: 55%; 
+        width: 68%; 
     }
     .card-naslov{font-size: 5.5vh;}
     .card-vsebina{font-size:2vh;}
@@ -493,6 +475,9 @@ footer .footer-bottom{
     .stranke-grid-stranka:nth-child(1){border-right: 1px solid black;}
     .stranke-grid-stranka:nth-child(3){border-right: 1px solid black;}
     .stranke-grid-stranka:nth-child(2){border-right: none;}
+  
+    footer .footer-bottom {font-size: 3.5vw;
+    }
     /* Konec stranke*/
 }
 
@@ -784,6 +769,7 @@ font-size: 5vh;
 
 
 /*  ----Prodajni-program stran*/
+
 .prodajni-program-container{
    width: 100%;
     display: flex; flex-direction: row;
@@ -802,7 +788,8 @@ font-size: 5vh;
         
 }
 .box {
-    height: 400px;
+    max-width: 90%;
+    max-height: 400px;
     display:flex; flex-direction: column; justify-content: space-between;
     color: #1a3b66;
     font-family: 'Poppins', sans-serif;    
@@ -846,4 +833,8 @@ font-size: 5vh;
     100%{
         transform: translateY(0);
     }
+}
+@media screen and (max-width:900px) {
+    .prodajni-program-container-grids{width: 100%;}
+    .box{font-size: 5vw;}
 }

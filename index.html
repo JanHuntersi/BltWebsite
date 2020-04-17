@@ -11,23 +11,8 @@
 </head>
 <body>
    
-      <!---Zgornji del zaslona naslov na levi in stevilka na desni      --> 
-      <section class="cointainer"> 
-        <div id="left-top-wrapper">
-         <p><i class="fas fa-map-marker-alt" 
-           style="font-size: 2.5vh;">
-           <!--  Tukaj gre ikona geo-lokacije-->
-       </i>  Ulica Sv. Barbare 6, 5280 Idrija</p>
-        </div>
-        <div id="right-top-wrapper">
-           <p><i class="fas fa-phone-alt"></i
-               style="font-size: 2.5vh;">
-    <!--  Tukaj gre ikona telefona-->
-           </i> +386 5 37 43 </p>
-       </section>
-
      <!---Navbar - sticky     -->
-   <nav id="myHeader">
+   <nav id="myHeader" class="sticky">
     <a class="logo" href="#" title="">
         <img alt="" src="slike/blt_logo.svg">
     </a> 
@@ -46,7 +31,25 @@
        </div>
    </nav>
 <div class="vsebina-strani">
- 
+ <!--Konec Navbar-->
+
+
+      <!---Zgornji del zaslona naslov na levi in stevilka na desni      --> 
+      <section class="cointainer"> 
+        <div id="left-top-wrapper">
+         <p><i class="fas fa-map-marker-alt" 
+           style="font-size: 2.5vh;">
+           <!--  Tukaj gre ikona geo-lokacije-->
+       </i>  Ulica Sv. Barbare 6, 5280 Idrija</p>
+        </div>
+        <div id="right-top-wrapper">
+           <p><i class="fas fa-phone-alt"></i
+               style="font-size: 2.5vh;">
+    <!--  Tukaj gre ikona telefona-->
+           </i> +386 5 37 43 </p>
+       </section>
+       <!--Konec del zaslona na levi številka-->
+
 <!-- Slider images-->
 <div class="slider-image">
 <p id="slider-image-naslov">CELOVITE REŠITVE</p>
@@ -143,8 +146,6 @@
 <!-- Konec  Footer-->
 </div>
 
-<!--  Gumb za idi navzgor-->
-<a onclick="topFunction()" id="gumb-za-navzgor"><i class="fas fa-chevron-up"></i></a>
 
 <script src="app.js"></script>
   
