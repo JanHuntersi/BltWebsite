@@ -514,6 +514,7 @@ html {
       font-size: 4vw;
       color: white;
       text-transform:uppercase;
+      animation: 1.5s ease-out 0s 1 animacijaOdLeve;
     }
     #slider-image-container-vsebina{
      
@@ -531,6 +532,7 @@ html {
               font-family: Poppins; font-size: 1.5vw;
       font-weight: 500;
       transition: 0.3s ease-in;
+      animation: 1.5s ease-in  animacijaOdDesne;
     }
     #slider-image-button:hover{
         background-color: #eba458;
@@ -540,6 +542,8 @@ html {
     }
     #slider-image-left-column{
         width: 65%; height:100%;display:flex;justify-content: flex-end; align-items: flex-end; 
+
+        animation: 1.5s ease-in  animacijaOdSpodaj;
     }
     @media screen and (max-width:900px) {
         body {
@@ -623,7 +627,7 @@ html {
         height: 89vh;
         width: 100%;
         background-image: linear-gradient(to right, #3c5cbc , #9cd4eb);
-        display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
     } 
 
     .kontakt-kontakt{
@@ -637,11 +641,16 @@ html {
         width: 100%;
         height: 3rem;
         border-width: 2px;
-        border-color:  rgb(255, 255, 255);
+        border-color:  rgb(175, 175, 175);
         border-radius: 10px;
         border-style:solid;
         background-color: transparent;
         font-size: large;
+        transition: 0.7s ease-in-out;
+    }
+    .input-kontakt:focus{
+        border-color:  rgb(255, 255, 255);
+        border-width: 2.9px;
     }
     input {color: white;
     padding-left: 25px;
@@ -704,6 +713,7 @@ html {
     #kontakt-header-naslov{
         align-items: center; font-family: Poppins;
       font-weight: 500;font-size: 10vh; color: white; justify-content: center; padding-bottom: 10vh;
+      animation: 1s ease-in   animacijaOdSpodaj;
     }
     #kontakt-header-button{
         border-radius: 15px;display: flex; align-items: center; justify-content:center;background-color:#f28511;text-align: center;
@@ -769,5 +779,71 @@ font-size: 5vh;
     }
     #kdo-smo-naslov{
         font-size: 1vh;
+    }
+}
+
+
+/*  ----Prodajni-program stran*/
+.prodajni-program-container{
+   width: 100%;
+    display: flex; flex-direction: row;
+    justify-content: center; align-items: center;
+}
+.prodajni-program-container-grids{
+ 
+    margin-bottom: 10%;  
+    width: 90%;
+      height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr )); 
+        column-gap: 2.5vw;
+        row-gap: 5vh;
+        
+        
+}
+.box {
+    height: 400px;
+    display:flex; flex-direction: column; justify-content: space-between;
+    color: #1a3b66;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 2.3vw;
+}
+.prodajni-program-naslov{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    display:flex; flex-direction: row; justify-content: center; align-items: center;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 2vw;
+    
+}
+@keyframes  animacijaOdLeve{
+    0%{transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes  animacijaOdDesne{
+    0%{transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animacijaOdSpodaj{
+    0%{transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes animacijaOdZgoraj{
+    0%{transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
