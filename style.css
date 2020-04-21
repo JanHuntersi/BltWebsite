@@ -801,14 +801,14 @@ font-size: 5vh;
     font-size: 2.3vw;
 }
 .prodajni-program-naslov{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    width: 90%;
-    margin-left: 5%;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    width: 85%;
+    margin-left: 7.5%;
     display:flex; flex-direction: row; justify-content: center; align-items: center;
     color: #000000;
-    font-family: 'Poppins', sans-serif;    
-    font-size: 2vw;
+    font-family: 'Poppins ', sans-serif;    
+    font-size: 1.9vw;
     
 }
 @media screen and (min-width:901px){.prodajni-program-container-grids{margin-left:5%;}}
