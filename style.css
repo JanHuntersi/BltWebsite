@@ -173,13 +173,11 @@ background-size: cover;
     font-weight: 500;
     font-size: 8vh;
     color: white;
-    animation: 2.8s ease-in  animacijaOdLeve;
 }
 #pred-podnaslov{
     padding-left: 13%;
     padding-top: 2%;
     padding-bottom: 14%;
-    animation: 3.7s alternate  animacijaOdDesne;
 }
 #slider-image-podnaslov{
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
@@ -504,7 +502,6 @@ html {
       font-size: 4vw;
       color: white;
       text-transform:uppercase;
-      animation: 1.5s ease-out 0s 1 animacijaOdLeve;
     }
     #slider-image-container-vsebina{
      
@@ -522,7 +519,6 @@ html {
               font-family: Poppins; font-size: 1.5vw;
       font-weight: 500;
       transition: 0.3s ease-in;
-      animation: 1.5s ease-in  animacijaOdDesne;
     }
     #slider-image-button:hover{
         background-color: #eba458;
@@ -533,7 +529,6 @@ html {
     #slider-image-left-column{
         width: 65%; height:100%;display:flex;justify-content: flex-end; align-items: flex-end; 
 
-        animation: 1.5s ease-in  animacijaOdSpodaj;
     }
     @media screen and (max-width:900px) {
         body {
@@ -703,7 +698,7 @@ html {
     #kontakt-header-naslov{
         align-items: center; font-family: Poppins;
       font-weight: 500;font-size: 10vh; color: white; justify-content: center; padding-bottom: 10vh;
-      animation: 1s ease-in   animacijaOdSpodaj;
+  
     }
     #kontakt-header-button{
         border-radius: 15px;display: flex; align-items: center; justify-content:center;background-color:#f28511;text-align: center;
@@ -843,4 +838,24 @@ font-size: 5vh;
 @media screen and (max-width:900px) {
     .prodajni-program-container-grids{width: 100%;}
     .box{font-size: 5vw;}
+}
+@media screen and (min-width:901px) {
+    #kontakt-header-naslov{
+      animation: 1s ease-in   animacijaOdSpodaj;
+    }
+    #slider-image-naslov{
+    animation: 2.8s ease-in  animacijaOdLeve;
+   }
+   #slider-image-left-column{
+    animation: 1.5s ease-in  animacijaOdSpodaj;
+}
+#pred-podnaslov{
+    animation: 3.7s alternate  animacijaOdDesne;
+}
+#slider-image-container-naslov{
+   animation: 1.5s ease-out 0s 1 animacijaOdLeve;
+  }
+  #slider-image-button{
+  animation: 1.5s ease-in  animacijaOdDesne;
+}
 }
