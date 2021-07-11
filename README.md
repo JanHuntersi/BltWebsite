@@ -7,3 +7,12 @@ Slike in barvna shema so bile prevzete od originalne strani
   Trenutna domena: http://jansernec.me/
 </p>
 <p>Koda se nahaja pod gh-pages  (branch) </p>
+
+<p>Izseki spletne strani: <p>
+  
+  ![blt1](https://user-images.githubusercontent.com/55513538/125213800-2c4a7580-e2b4-11eb-922f-bf6924c291f1.PNG)
+  
+  </br>
+  
+![blt2](https://user-images.githubusercontent.com/55513538/125213803-2f456600-e2b4-11eb-9812-3d950b2620a3.PNG)
+
